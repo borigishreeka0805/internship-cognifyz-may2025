@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.7;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+/* Navigation Styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.nav-links li a:hover {
+    color: #ff6f61;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: transform 0.3s ease-in-out;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+.menu.active {
+    display: block;
+}
+.menu li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.menu li:last-child {
+    border-bottom: none;
+}
+.menu li a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: block;
+}
+.menu li a:hover {
+    color: #ff6f61;
+}
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+main h1 {
+    font-size: 37.33px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+main p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cta-button:hover {
+    background-color: #e56254;
+}
+/* Featured Dishes Styles */
+.featured-dishes {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.featured-dishes h2 {
+    font-size: 36px;
+    color: #ff6f61;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+.dish-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.dish-card:hover {
+    transform: translateY(-10px);
+}
+.dish-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+.dish-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.dish-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+footer p {
+    font-size: 16px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .menu {
+        top: 100px;
+    }
+    main h1 {
+        font-size: 26.66px;
+    }
+    main p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    .dish-grid {
+        grid-template-columns: 1fr;
+    }
+    main h1 {
+        font-size: 24px;
+    }
+    main p {
+        font-size: 14px;
+    }
+    .cta-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}

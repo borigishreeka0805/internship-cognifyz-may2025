@@ -1,0 +1,228 @@
+/* General Styles for the Header */
+header {
+    background-color: #4c6baf;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure the header stays in place */
+    z-index: 1000; /* Keeps the header on top of content */
+}
+
+/* Hamburger Icon */
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Open mobile menu */
+#hamburger-icon.open .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#hamburger-icon.open .bar2 {
+    opacity: 0;
+}
+
+#hamburger-icon.open .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #4c6baf;
+    text-align: center;
+    z-index: 999; /* Ensure the mobile menu appears above content */
+}
+
+/* Add padding to mobile menu items */
+.mobile-menu li {
+    padding: 15px;
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-menu li a:hover {
+    color: #ddd;
+}
+
+/* Responsive Styles for the menu */
+@media (max-width: 1024px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+        z-index: 100; /* Ensure the mobile menu stays above content */
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+}
+
+  
+#brand a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.desktop-menu {
+    display: flex;
+    list-style: none;
+}
+
+.desktop-menu li {
+    margin: 0 15px;
+}
+
+.desktop-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.desktop-menu li a:hover {
+    color: #ddd;
+}
+
+/* Hamburger Icon Styles */
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #4c6baf;
+    text-align: center;
+}
+
+.mobile-menu li {
+    padding: 15px;
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-menu li a:hover {
+    color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    #hamburger-icon.open div {
+        background-color: #fff;
+    }
+
+    #hamburger-icon.open .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #hamburger-icon.open .bar2 {
+        opacity: 0;
+    }
+
+    #hamburger-icon.open .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-content a {
+    color: #3273dc;
+    text-decoration: underline;
+}
+
+/* Mobile view: 1 column */
+@media screen and (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Tablet view: 3 columns */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .columns {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .column {
+        flex-basis: calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

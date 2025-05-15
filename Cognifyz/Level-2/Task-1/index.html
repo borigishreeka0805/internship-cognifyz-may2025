@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Cognifyz-Responsive-Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="brand"><a href="#">Cognifyz Website</a></div>
+        <nav>
+          <ul class="desktop-menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="mobile-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+    
+    <div class="container">
+        <div class="columns is-multiline">
+
+            <!-- HTML Tutorial Card -->
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://jdcreation.neocities.org/jd_academy/html-logo.png" alt="Html Tutorial">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p><b>HTML Tutorial:</b> HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It defines elements like headings, paragraphs, images, and links, which are interpreted by browsers to display web pages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Tutorial Card -->
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://th.bing.com/th/id/OIP.3ZzgCdy_Jkjo17ro3VyG6gHaEP?cb=iwc2&rs=1&pid=ImgDetMain" alt="CSS Tutorial">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p><b>CSS Tutorial:</b> CSS (Cascading Style Sheets) is a style sheet language used to control the appearance and layout of HTML elements on a web page. It allows you to apply styles such as colors, fonts, spacing, and positioning to create visually appealing and responsive designs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript Tutorial Card -->
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://th.bing.com/th/id/OIP.Oag0dh4MINdG_qxOzJMoiwHaIB?cb=iwc2&rs=1&pid=ImgDetMain" alt="JavaScript Tutorial">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p><b>JavaScript Tutorial:</b> JavaScript is a versatile programming language used to add interactivity, dynamic content, and functionality to web pages. It enables features like form validation, animations, and real-time updates, enhancing the user experience on the web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
