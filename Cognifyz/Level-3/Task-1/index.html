@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz Technologies Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-semibold text-blue-700 text-center mb-6">Cognifyz Technologies - Our Work</h1>
+        <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Image Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="https://www.sgstechnologies.net/sites/default/files/2022-03/ai.jpg" alt="Project 1: AI Development" class="thumbnail rounded-md cursor-pointer w-full h-auto" data-full-src="https://placehold.co/800x600/EEE/31343C">
+                <h2 class="text-lg font-semibold text-gray-800 mt-2 text-center">AI Development</h2>
+                <p class="text-gray-600 text-sm text-center">Building intelligent solutions.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="https://jbsoftware.ca/wp-content/uploads/web-design.jpg" alt="Project 2: Web Design" class="thumbnail rounded-md cursor-pointer w-full h-auto" data-full-src="https://placehold.co/800x600/EEE/31343C">
+                <h2 class="text-lg font-semibold text-gray-800 mt-2 text-center">Web Design</h2>
+                <p class="text-gray-600 text-sm text-center">Crafting beautiful websites.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/523/046/original/vector-mobile-app-development-concept.jpg" alt="Project 3: Mobile App Development" class="thumbnail rounded-md cursor-pointer w-full h-auto" data-full-src="https://placehold.co/800x600/EEE/31343C">
+                <h2 class="text-lg font-semibold text-gray-800 mt-2 text-center">Mobile App Development</h2>
+                <p class="text-gray-600 text-sm text-center">Creating innovative mobile experiences.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="https://bleuwire.com/wp-content/uploads/2018/12/Cloud-Computing-Solution.jpg" alt="Project 4: Cloud Solutions" class="thumbnail rounded-md cursor-pointer w-full h-auto" data-full-src="https://placehold.co/800x600/EEE/31343C">
+                <h2 class="text-lg font-semibold text-gray-800 mt-2 text-center">Cloud Solutions</h2>
+                <p class="text-gray-600 text-sm text-center">Empowering businesses with cloud technology.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="https://wallpaperaccess.com/full/1704529.jpg" alt="Project 5: Data Science" class="thumbnail rounded-md cursor-pointer w-full h-auto" data-full-src="https://placehold.co/800x600/EEE/31343C">
+                <h2 class="text-lg font-semibold text-gray-800 mt-2 text-center">Data Science</h2>
+                <p class="text-gray-600 text-sm text-center">Turning data into valuable insights.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center">
+                <img src="https://wallpaperaccess.com/full/2407073.jpg" alt="Project 6: Cybersecurity" class="thumbnail rounded-md cursor-pointer w-full h-auto" data-full-src="https://placehold.co/800x600/EEE/31343C">
+                <h2 class="text-lg font-semibold text-gray-800 mt-2 text-center">Cybersecurity</h2>
+                <p class="text-gray-600 text-sm text-center">Protecting your digital assets.</p>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4 mt-8">Image Slideshow</h2>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://www.sgstechnologies.net/sites/default/files/2022-03/ai.jpg" alt="AI Development">
+                <div class="text">AI Development: Building Intelligent Solutions</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://jbsoftware.ca/wp-content/uploads/web-design.jpg" alt="Web Design">
+                <div class="text">Web Design: Crafting Beautiful Websites</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/523/046/original/vector-mobile-app-development-concept.jpg" alt="Mobile App Development">
+                <div class="text">Mobile App Development: Creating Innovative Mobile Experiences</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://bleuwire.com/wp-content/uploads/2018/12/Cloud-Computing-Solution.jpg" alt="Cloud Solutions">
+                <div class="text">Cloud Solutions: Empowering Businesses with Cloud Technology</div>
+            </div>
+             <div class="slide fade">
+                <img src="https://wallpaperaccess.com/full/1704529.jpg" alt="Data Science">
+                <div class="text">Data Science: Turning data into valuable insights.</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://wallpaperaccess.com/full/2407073.jpg" alt="Cybersecurity">
+                <div class="text">Cybersecurity: Protecting your digital assets.</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center; margin-top: 10px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+
+        <div id="expanded-img">
+            <span class="close-btn">&times;</span>
+            <img id="expanded-img-content" src="" alt="Expanded Image">
+        </div>
+
+        <p class="text-center text-gray-600 mt-8">All Rights Reserved &copy; Cognifyz Technologies</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

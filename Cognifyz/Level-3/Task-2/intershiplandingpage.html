@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship | Cognifyz Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .active {
+            color: #4f46e5; 
+            font-weight: 600;
+        }
+        .bg-gradient-to-br {
+            background-image: linear-gradient(to bottom right, #f7fafc, #f0f4f8); 
+        }
+        .text-gray-800 {
+            color: #1e293b; 
+        }
+        .text-gray-700 {
+            color: #374151; 
+        }
+        .text-blue-600 {
+            color: #2563eb; 
+        }
+        .text-blue-700 {
+            color: #1d4ed8; 
+        }
+        .bg-blue-500 {
+            background-color: #3b82f6; 
+        }
+        .hover\:bg-blue-600:hover {
+            background-color: #2563eb; 
+        }
+        .bg-green-500 {
+            background-color: #16a34a; 
+        }
+        .hover\:bg-green-600:hover {
+            background-color: #15803d; 
+        }
+        .shadow-md {
+             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+        .rounded-lg {
+            border-radius: 0.5rem; 
+        }
+        .py-4 {
+            padding-top: 1rem; 
+            padding-bottom: 1rem; 
+        .px-4 {
+            padding-left: 1rem; 
+            padding-right: 1rem; 
+        }
+        .py-10 {
+            padding-top: 2.5rem; 
+            padding-bottom: 2.5rem; 
+        }
+        .mb-4 {
+            margin-bottom: 1rem; 
+        }
+        .mb-6 {
+            margin-bottom: 1.5rem; 
+        }
+        .mb-8 {
+            margin-bottom: 2rem; 
+        }
+        .mb-12 {
+            margin-bottom: 3rem; 
+        }
+        .mt-4 {
+            margin-top: 1rem; 
+        }
+        .space-x-6 > li:not(:last-child) {
+            margin-right: 1.5rem; 
+        }
+        .space-y-4 > li:not(:last-child) {
+            margin-bottom: 1rem; 
+        }
+
+    </style>
+</head>
+<body class="bg-gradient-to-br text-gray-800">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold text-blue-600">
+                <img src="https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png" alt="Cognifyz Technologies Logo" class="h-15">
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-blue-500 transition duration-300">Home</a></li>
+                    <li><a href="#overview" class="hover:text-blue-500 transition duration-300">Overview</a></li>
+                    <li><a href="#qualifications" class="hover:text-blue-500 transition duration-300">Qualifications</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-gray-600 focus:outline-none" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-white w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-gray-600 focus:outline-none" aria-label="Close Menu">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block text-lg text-gray-800 hover:text-blue-500 transition duration-300">Home</a></li>
+                    <li><a href="#overview" class="block text-lg text-gray-800 hover:text-blue-500 transition duration-300">Overview</a></li>
+                    <li><a href="#qualifications" class="block text-lg text-gray-800 hover:text-blue-500 transition duration-300">Qualifications</a></li>
+                    <li><a href="#contact" class="block text-lg text-gray-800 hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-10">
+        <section id="home" class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-700 mb-4">Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+            <p class="text-lg text-gray-600 mb-8">Kickstart your career with our comprehensive internship program. Gain hands-on experience and work on real-world projects.</p>
+        </section>
+
+        <section id="overview" class="mb-12">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Internship Overview</h2>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <p class="text-gray-700 leading-relaxed">
+                    The Web Developer Internship at Cognifyz Technologies is a [Duration - e.g., 3-month] program designed to provide aspiring web developers with practical experience in a dynamic and supportive environment.  As an intern, you'll work alongside our experienced team on exciting projects, contributing to the development of cutting-edge web applications. This internship is more than just learning; it's an opportunity to become an integral part of Cognifyz Technologies and contribute to real projects that impact our clients. You'll be involved in the full software development lifecycle, from initial planning to deployment and maintenance.
+                </p>
+                 <ul class="list-disc list-inside mt-4 text-gray-700 leading-relaxed">
+                    <li><strong>Duration:</strong> [Specify duration, e.g., 3 months]</li>
+                    <li><strong>Location:</strong> [Specify location, e.g., Remote or City, State]</li>
+                    <li><strong>Start Date:</strong> [Specify start date or rolling admissions]</li>
+                    <li><strong>Stipend:</strong> [Specify if paid or unpaid]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="highlights" class="mb-12">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Internship Highlights</h2>
+            <div class="flex flex-wrap gap-6 justify-center">
+                <div class="bg-white shadow-md rounded-lg p-6 flex items-start w-full md:w-[45%] lg:w-[30%]">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-500 mr-3 flex-shrink-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75v-3.375c0-.621-.504-1.125-1.125-1.125H10.5V15.75m1.5-1.875h.75v-4.5h-.75v4.5Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.375 17.25a3 3 0 1 0 5.625 0H9.375Z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Real-World Experience</h3>
+                        <p class="text-gray-700 leading-relaxed">Gain hands-on experience working on real projects and contributing to the development of web applications used by our clients.  You'll apply your theoretical knowledge to practical scenarios, bridging the gap between classroom learning and industry demands.  This experience will significantly enhance your portfolio and make you a more competitive candidate in the job market.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 flex items-start w-full md:w-[45%] lg:w-[30%]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-500 mr-3 flex-shrink-0">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Mentorship & Guidance</h3>
+                        <p class="text-gray-700 leading-relaxed">Receive personalized mentorship from experienced web development professionals who will guide you through the internship and provide valuable feedback.  Our mentors are dedicated to helping you grow your skills and achieve your goals. You'll have regular one-on-one meetings, code reviews, and opportunities to ask questions and learn from their expertise.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 flex items-start w-full md:w-[45%] lg:w-[30%]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-500 mr-3 flex-shrink-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 6.364 6.364l9-9.752a4.5 4.5 0 0 0-6.364-6.364l-9 9.752Z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Skill Development</h3>
+                        <p class="text-gray-700 leading-relaxed">Enhance your skills in front-end and/or back-end development, depending on your interests and the project requirements.  You'll gain proficiency in industry-standard technologies and learn best practices for building scalable and maintainable web applications. We encourage you to explore new technologies and challenge yourself to step outside of your comfort zone.
+                        </p>
+                    </div>
+                </div>
+                 <div class="bg-white shadow-md rounded-lg p-6 flex items-start w-full md:w-[45%] lg:w-[30%]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-500 mr-3 flex-shrink-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.835 0 8.875-3.992 8.875-8.875s-3.992-8.875-8.875-8.875-8.875 3.992-8.875 8.875 3.992 8.875 8.875 8.875Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v2m0 4.5v2m0-6.5a3.375 3.375 0 0 1 3.375 3.375H8.625a3.375 3.375 0 0 1 3.375-3.375Z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Impactful Projects</h3>
+                        <p class="text-gray-700 leading-relaxed">Contribute to projects that have a real impact on our clients and users. You'll be part of a team that's creating solutions to real-world problems, and your work will make a difference. We believe in giving our interns meaningful responsibilities and opportunities to showcase their talents.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 flex items-start w-full md:w-[45%] lg:w-[30%]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-500 mr-3 flex-shrink-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h3.75a3 3 0 0 1 3 3v13.5a3 3 0 0 1-3 3h-3.75a3 3 0 0 1-3-3V5.25a3 3 0 0 1 3-3Z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Industry Exposure</h3>
+                        <p class="text-gray-700 leading-relaxed">Gain valuable insights into the web development industry and learn about the latest trends and technologies.  You'll have the opportunity to network with professionals, attend workshops, and participate in team meetings, gaining a holistic view of the industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 flex items-start w-full md:w-[45%] lg:w-[30%]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-500 mr-3 flex-shrink-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.683 16.53a4.5 4.5 0 0 1-1.063 1.097l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.097-1.063l9.759-9.759Z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Career Advancement</h3>
+                        <p class="text-gray-700 leading-relaxed">This internship can serve as a stepping stone to a successful career in web development.  Many of our interns have gone on to secure full-time positions at Cognifyz Technologies or other leading tech companies. We are committed to fostering talent and providing opportunities for growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="qualifications" class="mb-12">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Qualifications</h2>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We are looking for motivated individuals who are passionate about web development and eager to learn.  While specific technical skills are important, we also value candidates who demonstrate strong problem-solving abilities, a positive attitude, and a willingness to collaborate.
+                </p>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Desired Skills and Technologies:</h4>
+                <ul class="list-disc list-inside grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>[Framework 1, e.g., React, Angular, or Vue.js]</li>
+                    <li>[Framework 2, e.g., Node.js, Django, or Ruby on Rails]</li>
+                     <li>[Database, e.g., MySQL, PostgreSQL, MongoDB]</li>
+                    <li>Git and Version Control</li>
+                    <li>Responsive Web Design</li>
+                    <li>Problem-Solving Skills</li>
+                    <li>Communication Skills</li>
+                    <li>Teamwork and Collaboration</li>
+                    <li>[Optional: Any other specific skills, e.g., TypeScript, GraphQL, Docker]</li>
+                </ul>
+                 <p class="text-gray-700 leading-relaxed mt-4">
+                    Please note that while familiarity with the above technologies is preferred, we encourage candidates with a strong foundation in related areas to apply. We are committed to providing training and mentorship to help you expand your skillset.
+                </p>
+            </div>
+        </section>
+
+        <section id="apply" class="mb-12 text-center">
+            <p class="text-lg text-gray-600 mb-6">
+                Ready to take the next step in your web development career?  Click the button below to submit your application.
+            </p>
+            <a href="https://www.cognifyz.com/careers/" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 text-lg">
+                Apply Now
+            </a>
+             <p class="text-gray-700 mt-4 text-sm">
+                (You will be redirected to the Cognifyz Technologies careers page)
+            </p>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Contact Us</h2>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <p class="text-gray-700 text-lg">
+                    For any inquiries regarding the internship program, please feel free to contact us using the information below:
+                </p>
+                <ul class="mt-4 space-y-2">
+                    <li class="flex items-center">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-500 mr-2 flex-shrink-0">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v6m0 0v8.125a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5V13.5m15 0V5.625c0-.621-.504-1.125-1.125-1.125H4.875c-.621 0-1.125.504-1.125 1.125v8.125m18 0a2.625 2.625 0 1 0-5.25 0" />
+                        </svg>
+                        <span class="text-gray-700">Email: <a href="mailto:internships@cognifyz.com" class="text-blue-500hover:underline">internships@cognifyz.com</a></span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5text-gray-500 mr-2 flex-shrink-0">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.906-6.384 14.39-14.25 14.39a13.963 13.963 0 0 0-3.32-1.066l.06-4.545a17.93 17.93 0 0 1-1.066-3.32c0-7.866 6.384-14.25 14.25-14.25a13.963 13.963 0 0 1 3.32 1.066l-.06 4.545a17.93 17.93 0 0 0 1.066 3.32Z" />
+                        </svg>
+                        <span class="text-gray-700">Website: <a href="https://www.cognifyz.com" target="_blank" class="text-blue-500 hover:underline">www.cognifyz.com</a></span>
+                    </li>
+                </ul>
+            </div>
+</section>
+    </main>
+
+    <footer class="bg-gray-100 py-4 text-center text-gray-600 text-sm">
+        <p>&copy; 2025 Cognifyz Technologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('header nav a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
